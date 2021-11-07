@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coronavirus Survey Form</title>
+        <style>
+              h1{
+                width: 100%;
+                padding: 1em 0 1em 0;
+                background-color: blue;
+                text-align: center;
+                color: white;
+            }
+            body{
+                background-color:white;
+                display: block;
+                margin: auto;
+            }
+            p{
+                text-align: center;
+            }
+            #survey-form{
+                margin:auto;
+                width:50%;
+                
+            }
+            label{
+               display: inline-block;
+               padding-bottom: 1em;
+            }
+            input[type=text],select,#email,#number{
+                display: flex;
+                flex-direction:column;
+                width:80%;
+                height:20px;
+            }
+            #textarea{
+                width: 80%;
+                height: 7em;
+            }
+            #submit{
+                width: 100px;
+                height: 30px;
+                margin: 2% 0 2% 0;
+            }
+            #name-label{
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+    <h1 title="title">Coronavirus Return-to-Work Assessment Survey</h1>
+    <body>
+    <p id="description">- This survey form will help us know how comfortable you are with returning back to work.</p>
+    
+    <form id="survey-form" action="#">
+    
+     <label id="name-label"><b>Name (Full name)</b> </label><input type="text" id="name" placeholder="ex: Mainak Das" required><br>
+     <label id="email-label"><b>Email</b> </label><input type="email" id="email" placeholder="abc123@gmail.com" required><br>
+     <label id="number-label"><b>Phone Number </b></label><input type="tel" id="number" placeholder="9332772113" min="4" max = "12" required><br>
+    
+     <label id="gender-label"><b>Sex </b></label><select id="dropdown" name="gender">
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+     </select><br>
+     
+     <label><b>How comfortable you feel returning to the office?</b></label><br>
+     <input type="radio" name="comfortable" value="very_c">
+     <label for="name">Very Comfortable</label><br>
+     <input type="radio" name="comfortable" value="somewhat_c">
+     <label for="name">Somewhat Comfortable</label><br>
+     <input type="radio" name="comfortable" value="neither_c">
+     <label for="name">Neither Comfrotable nor Uncomfortable</label><br>
+     <input type="radio" name="comfortable" value="very_uc">
+     <label for="name">Very Unomfortable</label><br>
+     <input type="radio" name="comfortable" value="somewhat_uc">
+     <label for="name">Somewhat Uncomfortable</label><br>
+
+     <label ><b>Tell us about your biggest concerns with idea of returning to a workplace.(Select all that apply)</b></label><br>
+     <input type="checkbox" val="1">
+     <label>Getting exposed to coronavirus while travelling to work</label><br>
+     <input type="checkbox" val="2">
+     <label>Catching the noble corona virus at my workplace.</label><br>
+     <input type="checkbox" val="3">
+     <label>Unknowingly spreading the virus to co-workers and staff</label><br>
+     <input type="checkbox" val="4">
+     <label>A deceased flexibility after working from home</label><br>
+     <input type="checkbox" val="5">
+     <label>Arranging for child care</label><br>
+     <input type="checkbox" val="6">
+     <label>Leaving family members at home who needs assistance</label><br>
+     <input type="checkbox" val="7">
+     <label>Health issues preventing me from getting back to office</label><br>
+
+     <label><b>Anything you want to add more or say?</b></label><br>
+     <textarea id="textarea" rows="5" col="40" placeholder="Describe yourself here..."></textarea><br>
+
+     <input type="submit" id="submit">
+    </form>
+    <footer style="display: block; margin: auto; width: 100%;padding:2em 0 2em 0; background-color: aliceblue;text-align: center;">
+      -This form is created and designed by Mainak Das
+    </footer>
+</body>
+</html>
